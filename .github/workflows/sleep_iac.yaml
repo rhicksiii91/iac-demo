@@ -12,6 +12,6 @@ jobs:
       - name: Run Snyk to check Kubernetes manifest file for issues
         uses: snyk/actions/setup@master
       - name: Running Snyk IaC Test
-        run: snyk iac test ${{ github.repository }} --report
+        run: snyk iac test
         env:
           SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
