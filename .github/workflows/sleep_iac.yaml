@@ -9,6 +9,6 @@ jobs:
         env:
           SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
         with:
-          file: .
+          file: kubernetes/deployment.yaml
           command: test
-          args: ${{github.repository}} --report
+          args: --report
