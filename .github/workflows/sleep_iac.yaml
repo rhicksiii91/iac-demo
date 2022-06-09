@@ -14,6 +14,5 @@ jobs:
         env:
           SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
         with:
-          file: deployment.yaml
           command: test
           args: ${{ github.repository }} --report
