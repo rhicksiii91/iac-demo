@@ -16,3 +16,4 @@ jobs:
         with:
           command: test
           args: ${{ github.repository }} --report
+          files: .
