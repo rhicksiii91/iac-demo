@@ -10,7 +10,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Run Snyk to check Kubernetes manifest file for issues
-        uses: snyk/actions/setup@master
+        uses: snyk/snyk:alpine
       - name: Running Snyk IaC Test
         run: snyk iac test --report
         env:
