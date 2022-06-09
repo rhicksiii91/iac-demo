@@ -16,3 +16,4 @@ jobs:
         with:
           file: deployment.yaml
           command: test
+          args: --report
